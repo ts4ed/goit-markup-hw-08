@@ -57,22 +57,16 @@
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--transition), color var(--transition);
-  &:hover {
+  &:hover, &:focus {
     fill: var(--accent-text-color);
     color: var(--accent-text-color);
     border-color: var(--accent-text-color);
   }
-  &:focus {
-    fill: var(--accent-text-color);
-    color: var(--accent-text-color);
-    border-color: var(--accent-text-color);
-  }
-  &:hover + .modal__icon {
+
+  &:hover + .modal__icon, &:focus + .modal__icon {
     fill: var(--accent-text-color);
   }
-  &:focus + .modal__icon {
-    fill: var(--accent-text-color);
-  }
+
 }
 .modal__textarea {
   resize: none;
@@ -85,12 +79,7 @@
 
   color: rgba(117, 117, 117, 0.5);
   transition: color var(--transition);
-  &:focus {
-    fill: var(--accent-text-color);
-    color: var(--accent-text-color);
-    border-color: var(--accent-text-color);
-  }
-  &:hover {
+  &:focus, &:hover {
     fill: var(--accent-text-color);
     color: var(--accent-text-color);
     border-color: var(--accent-text-color);

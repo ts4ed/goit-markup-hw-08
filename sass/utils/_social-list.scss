@@ -19,14 +19,11 @@
   background-color: var(--icon-bg-color);
 
   transition: fill var(--transition), background-color var(--transition);
-  &:focus {
+  &:focus, &:hover {
     background-color: var(--accent-text-color);
     fill: var(--third-color-text);
   }
-  &:hover {
-    background-color: var(--accent-text-color);
-    fill: var(--third-color-text);
-  }
+   
 }
 .social__icon {
   width: 20px;

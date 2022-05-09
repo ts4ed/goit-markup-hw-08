@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
+  
 }
 .footer .container {
   display: flex;
@@ -35,12 +36,10 @@
   transition: color var(--transition);
 }
 .footer__link--info{
-  &:hover {
+  &:hover,  &:focus {
     color: var(--accent-text-color);
   }
-  &:focus{
-    color: var(--accent-text-color);
-  }
+
 }
 
 .social__title {
@@ -61,6 +60,15 @@
 }
 .submit__label {
   display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  color: var(--third-color-text);
+  
 }
 .submit__input {
   padding-left: 16px;

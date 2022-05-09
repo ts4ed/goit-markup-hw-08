@@ -21,10 +21,7 @@
   fill: var(--icon-color);
 
   transition: border-color var(--transition), fill var(--transition);
-  &:focus {
-    fill: var(--accent-text-color);
-    border-color: var(--accent-text-color);
-  }
+  &:focus,
   &:hover {
     fill: var(--accent-text-color);
     border-color: var(--accent-text-color);

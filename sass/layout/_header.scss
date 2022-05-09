@@ -27,14 +27,11 @@
   padding-bottom: 32px;
   fill: var(--primary-text-color);
   transition: fill var(--transition), color var(--transition);
-  &:focus {
+  &:focus,  &:hover {
     color: var(--accent-text-color);
   fill: var(--accent-text-color);
   }
-  &:hover {
-    color: var(--accent-text-color);
-  fill: var(--accent-text-color);
-  }
+
 }
 
 .current {

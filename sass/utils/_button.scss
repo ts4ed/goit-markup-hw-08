@@ -22,12 +22,10 @@
   border-radius: 4px;
 
   transition: background-color var(--transition);
-  &:hover {
+  &:hover, &:focus {
     background-color: var(--accent-bg-color);
   }
-  &:focus {
-    background-color: var(--accent-bg-color);
-  }
+  
 }
 
 .button__exit {
