@@ -3,14 +3,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  
-  @include mq(desktop){
+
+  @include mq(desktop) {
     width: 1600px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -25,22 +25,22 @@
   color: var(--secondary-text-color);
 }
 .section__team {
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
- 
+
   background-color: var(--third-bg-color);
   text-align: center;
 }
 .about__section {
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -49,12 +49,11 @@
   }
 }
 .clients__section {
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
   @include mq(tablet-only) {
     padding-bottom: 0;
   }
- 
 }
