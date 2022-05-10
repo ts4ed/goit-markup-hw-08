@@ -548,7 +548,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .about__section {
     padding-bottom: 0;
   }

@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo__header" href="./index.html">Web<span class="logo__black">Studio</span></a>
-        
+
         <button
           type="button"
           class="menu-button"
@@ -33,42 +33,42 @@
         </button>
         <div class="menu-container" id="menu-container" data-menu>
           <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="header__link " href="./index.html">Студия</a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="header__link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth__list">
+            <li class="auth__item">
+              <a class="header__link header__link--mail" href="mailto:info@devstudio.com">
+                <svg class="icon__mail">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a class="header__link current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link" href="">Контакты</a>
+            <li class="auth__item">
+              <a class="header__link header__link--phone" href="tel:+380961111111">
+                <svg class="icon__phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="auth__list">
-          <li class="auth__item">
-            <a class="header__link header__link--mail" href="mailto:info@devstudio.com">
-              <svg class="icon__mail">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="auth__item">
-            <a class="header__link header__link--phone" href="tel:+380961111111">
-              <svg class="icon__phone">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <ul class="menu-button__list">
-          <li class="menu-button__item">Instagram</li>
-          <li class="menu-button__item">Twitter</li>
-          <li class="menu-button__item">Facebook</li>
-          <li class="menu-button__item">LinkedIn</li>
-        </ul>
+          <ul class="menu-button__list">
+            <li class="menu-button__item">Instagram</li>
+            <li class="menu-button__item">Twitter</li>
+            <li class="menu-button__item">Facebook</li>
+            <li class="menu-button__item">LinkedIn</li>
+          </ul>
         </div>
       </div>
     </header>
@@ -107,7 +107,15 @@
             <li class="card__item">
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
-                  <img src="./images/option1.jpg" width="370" height="294" alt="Технокряк" />
+                  <img
+                    srcset="
+                      ./images/option1-354.jpg 354w,
+                      ./images/option1-370.jpg 370w,
+                      ./images/option1-450.jpg 450w
+                    "
+                    src="./images/option1-354.jpg"
+                    alt="Технокряк"
+                  />
                   <p class="catalog__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -123,7 +131,15 @@
             <li class="card__item">
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
-                  <img src="./images/option2.jpg" width="370" height="294" alt="Постер NBA" />
+                  <img
+                    srcset="
+                      ./images/option2-354.jpg 354w,
+                      ./images/option2-370.jpg 370w,
+                      ./images/option2-450.jpg 450w
+                    "
+                    src="./images/option2-354.jpg"
+                    alt="Постер NBA"
+                  />
                   <p class="catalog__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -139,7 +155,15 @@
             <li class="card__item">
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
-                  <img src="./images/option3.jpg" width="370" height="294" alt="Ресторан Seafood" />
+                  <img
+                    srcset="
+                      ./images/option3-354.jpg 354w,
+                      ./images/option3-370.jpg 370w,
+                      ./images/option3-450.jpg 450w
+                    "
+                    src="./images/option3-354.jpg"
+                    alt="Ресторан Seafood"
+                  />
                   <p class="catalog__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -155,7 +179,13 @@
             <li class="card__item">
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
-                  <img src="./images/option4.jpg" width="370" height="294" alt="Проект Prime" />
+                  <img 
+                  srcset="
+                      ./images/option4-354.jpg 354w,
+                      ./images/option4-370.jpg 370w,
+                      ./images/option4-450.jpg 450w"
+                    src="./images/option4-354.jpg"
+                  alt="Проект Prime" />
                   <p class="catalog__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -171,7 +201,13 @@
             <li class="card__item">
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
-                  <img src="./images/option5.jpg" width="370" height="294" alt="Проект Boxes" />
+                  <img 
+                  srcset="
+                      ./images/option5-354.jpg 354w,
+                      ./images/option5-370.jpg 370w,
+                      ./images/option5-450.jpg 450w"
+                    src="./images/option5-354.jpg" 
+                  alt="Проект Boxes" />
                   <p class="catalog__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -188,9 +224,11 @@
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
                   <img
-                    src="./images/option6.jpg"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/option6-354.jpg 354w,
+                      ./images/option6-370.jpg 370w,
+                      ./images/option6-450.jpg 450w"
+                    src="./images/option6-354.jpg"
                     alt="Inspiration has no Borders"
                   />
                   <p class="catalog__description">
@@ -209,9 +247,11 @@
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
                   <img
-                    src="./images/option7.jpg"
-                    width="370"
-                    height="294"
+                    srcset="
+                      ./images/option7-354.jpg 354w,
+                      ./images/option7-370.jpg 370w,
+                      ./images/option7-450.jpg 450w"
+                    src="./images/option7-354.jpg"
                     alt="Издание Limited Edition"
                   />
                   <p class="catalog__description">
@@ -229,7 +269,13 @@
             <li class="card__item">
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
-                  <img src="./images/option8.jpg" width="370" height="294" alt="Проект LAB" />
+                  <img 
+                  srcset="
+                      ./images/option8-354.jpg 354w,
+                      ./images/option8-370.jpg 370w,
+                      ./images/option8-450.jpg 450w"
+                    src="./images/option8-354.jpg" 
+                  alt="Проект LAB" />
                   <p class="catalog__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -245,7 +291,13 @@
             <li class="card__item">
               <a class="catalog__link" href="" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="catalog__img">
-                  <img src="./images/option9.jpg" width="370" height="294" alt="Growing Business" />
+                  <img 
+                  srcset="
+                      ./images/option9-354.jpg 354w,
+                      ./images/option9-370.jpg 370w,
+                      ./images/option9-450.jpg 450w"
+                    src="./images/option9-354.jpg" 
+                  alt="Growing Business" />
                   <p class="catalog__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -268,85 +320,86 @@
       <div class="section footer__section">
         <div class="container">
           <div class="footer__item">
-          <a class="footer__link logo__footer" href="./index.html">Web<span class="logo__white">Studio</span></a>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a
-                  class="footer__link--info"
-                  href="https://goo.gl/maps/AMvUKNJv9h5WxEZ98"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >г. Киев, пр-т Леси Украинки, 26</a>
-              </li>
-              <li class="address__item">
-                <a class="footer__link--info" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="address__item">
-                <a class="footer__link--info" href="tel:+380991111111">+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+            <a class="footer__link logo__footer" href="./index.html"
+              >Web<span class="logo__white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    class="footer__link--info"
+                    href="https://goo.gl/maps/AMvUKNJv9h5WxEZ98"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="footer__link--info" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a class="footer__link--info" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
           </div>
           <div class="footer__item social">
-          <h2 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="social__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="social__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="social__icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="social__icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <h2 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                  <svg class="social__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                  <svg class="social__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                  <svg class="social__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="" target="_blank" rel="noopener noreferrer nofollow">
+                  <svg class="social__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="footer__item subscribe">
-          <form class="submit js-speaker-form">
-            <label class="submit__label" for="mail">подпишитесь на рассылку</label>
-            <div class="subscribe">
-              <input
-                class="submit__input"
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="E-mail"
-              />
-              <button class="button" type="submit">
-                Подписаться
-                <svg class="submit__icon">
-                  <use href="./images/icons.svg#icon-subscribe"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+            <form class="submit js-speaker-form">
+              <label class="submit__label" for="mail">подпишитесь на рассылку</label>
+              <div class="subscribe">
+                <input
+                  class="submit__input"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="E-mail"
+                />
+                <button class="button" type="submit">
+                  Подписаться
+                  <svg class="submit__icon">
+                    <use href="./images/icons.svg#icon-subscribe"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </footer>
 
-
-    
     <script src="./js/menu.js"></script>
     <script src="./js/speaker-form.js"></script>
   </body>
