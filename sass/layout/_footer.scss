@@ -1,4 +1,8 @@
 .footer {
+    & > .social__icon {
+      fill: var(--third-color-text);
+    }
+  
   @include mq(mobile-only) {
     max-width: 480px;
     margin-left: auto;
