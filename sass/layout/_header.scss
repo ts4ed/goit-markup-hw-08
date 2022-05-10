@@ -98,11 +98,12 @@
   @include mq(tablet) {
     display: none;
   }
-  transition: fill var(--transition);
+  transition: fill var(--transition), ;
   &:hover,
   &:focus {
     fill: var(--accent-text-color);
   }
+  
 }
 .menu-button__icon {
   display: flex;
@@ -131,8 +132,12 @@
     width: 100%;
     height: 796px;
     background-color: var(--primary-bg-color);
+    transform: translateY(-100%);
+    transition: transform var(--transition);
     &.is-open {
       display: block;
+      transform: translateY(0);
+      
     }
   }
   @include mq(tablet) {
