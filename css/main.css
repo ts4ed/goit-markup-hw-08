@@ -678,8 +678,8 @@ img {
   .modal {
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -30%) scale(0.9);
-            transform: translate(-50%, -30%) scale(0.9);
+    -webkit-transform: translate(-50%, -20%) scale(0.9);
+            transform: translate(-50%, -20%) scale(0.9);
     min-width: 450px;
     min-height: 609px;
   }
@@ -691,8 +691,8 @@ img {
     min-height: 609px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -25%) scale(1);
-            transform: translate(-50%, -25%) scale(1);
+    -webkit-transform: translate(-50%, -20%) scale(1);
+            transform: translate(-50%, -20%) scale(1);
   }
 }
 
