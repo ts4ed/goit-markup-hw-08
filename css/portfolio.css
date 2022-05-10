@@ -433,7 +433,7 @@ img {
 
 @media (min-width: 1200px) {
   .section__team {
-    width: 1600px;
+    max-width: 1600px;
   }
 }
 

@@ -433,7 +433,7 @@ img {
 
 @media (min-width: 1200px) {
   .section__team {
-    width: 1600px;
+    max-width: 1600px;
   }
 }
 
@@ -1769,13 +1769,6 @@ img {
 .team__title {
   font-size: 16px;
   line-height: 1.18;
-}
-
-@media (max-width: 767.98px) {
-  .team__list > img {
-    width: 450px;
-    height: 460px;
-  }
 }
 
 .team__title {

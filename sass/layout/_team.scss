@@ -10,11 +10,7 @@
 
 .team__list {
   @extend %list;
-  @include mq(mobile-only){
-    & > img {
-      width: 450px; height: 460px;
-    }
-  }
+  
 }
 .team__title {
   margin-bottom: 10px;
