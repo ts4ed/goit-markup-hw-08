@@ -1,3 +1,14 @@
+.section__work{
+  @include mq (mobile-only){
+    display: none;
+  }
+  @include mq(tablet-only){
+    display: none;
+  }
+  @include mq(desktop){
+    display: block;
+  }
+}
 .work__list {
   @extend %list;
 }

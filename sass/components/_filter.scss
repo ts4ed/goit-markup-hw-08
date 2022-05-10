@@ -3,6 +3,13 @@
 }
 .filter__list {
   display: flex;
+  @include mq(mobile-only){
+    flex-wrap: wrap;
+    max-width: 480px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
@@ -10,6 +17,9 @@
 .filter__items {
   display: block;
   align-items: center;
+  @include mq(mobile-only){
+    margin-bottom: 15px;
+  }
 }
 .filter__items:not(last-child) {
   margin-right: 8px;

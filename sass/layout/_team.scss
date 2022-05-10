@@ -1,8 +1,4 @@
-.section__team {
-  background-color: var(--third-bg-color);
 
-  text-align: center;
-}
 .team__position {
   margin-bottom: 16px;
 }
@@ -29,8 +25,16 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team__item {
+  @include mq(mobile-only) {
+    --card-item: 1;
+    
+  }
+  @include mq(tablet-only){
+    --card-item: 2;
+  }
   --card-item: 4;
 }
 .team__wrapper {
   padding: 30px;
+  
 }

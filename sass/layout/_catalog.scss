@@ -2,6 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   @extend %list;
+  @include mq(mobile-only){
+    & > .card__item{
+      --card-item: 1;
+    }
+    padding-bottom: 60px;
+  }
+  @include mq(tablet-only){
+    & > .card__item{
+      --card-item: 2;
+    }
+  }
 }
 .catalog__variant {
   padding: 20px 24px;

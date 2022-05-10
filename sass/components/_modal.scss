@@ -4,10 +4,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
+  @include mq(mobile-only) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%) scale(1);
+    min-width: 450px;
+    min-height: 609px;
+  }
+  @include mq(tablet-only) {
+    min-width: 450px;
+    min-height: 609px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) scale(1);
+  }
   min-width: 528px;
   min-height: 581px;
-
+  
   background-color: var(--primary-bg-color);
 
   transition: transform var(--transition);
@@ -57,16 +70,17 @@
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--transition), color var(--transition);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     fill: var(--accent-text-color);
     color: var(--accent-text-color);
     border-color: var(--accent-text-color);
   }
 
-  &:hover + .modal__icon, &:focus + .modal__icon {
+  &:hover + .modal__icon,
+  &:focus + .modal__icon {
     fill: var(--accent-text-color);
   }
-
 }
 .modal__textarea {
   resize: none;
@@ -79,7 +93,8 @@
 
   color: rgba(117, 117, 117, 0.5);
   transition: color var(--transition);
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     fill: var(--accent-text-color);
     color: var(--accent-text-color);
     border-color: var(--accent-text-color);
@@ -123,6 +138,13 @@
   line-height: 1.71px;
 
   color: var(--primary-text-color);
+  @include mq(mobile-only) {
+    font-size: 12px;
+  }
+  @include mq(tablet){
+    font-size: 12px;
+
+  }
 }
 
 .confirmation__checkbox {

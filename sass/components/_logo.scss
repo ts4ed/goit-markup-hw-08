@@ -1,4 +1,10 @@
 .logo__footer {
+  @include mq(mobile-only) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   display: block;
   align-items: center;
   margin-bottom: 20px;
@@ -11,7 +17,6 @@
   color: var(--accent-text-color);
 }
 .logo__header {
-  margin-right: 93px;
   color: inherit;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -21,6 +26,12 @@
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
   @extend %link;
+  @include mq(tablet){
+    margin-right: 84px;
+  }
+  @include mq(desktop){
+    margin-right: 93px;
+  }
 }
 .logo__black {
   color: var(--color-black);

@@ -1,15 +1,16 @@
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  @include mq(mobile-only) {
+    max-width: 480px;
+  }
+
   margin-left: auto;
   margin-right: auto;
-}
-.hero-container,
-.team-container {
-  width: 1600px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  @include mq(tablet-only) {
+    max-width: 768px;
+  }
+  @include mq(desktop){
+    width: 1200px;
+  }
 }
