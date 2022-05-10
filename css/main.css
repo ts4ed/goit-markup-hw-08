@@ -905,9 +905,9 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .auth__list {
-    margin-left: 84px;
+    margin-left: 75px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
