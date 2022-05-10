@@ -503,7 +503,6 @@ img {
 
 @media (min-width: 1200px) {
   .section {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
@@ -538,6 +537,12 @@ img {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section__team {
+    width: 1600px;
   }
 }
 
@@ -1314,7 +1319,9 @@ img {
 
 @media (min-width: 1200px) {
   .header__link--phone {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1335,7 +1342,10 @@ img {
 
 @media (min-width: 1200px) {
   .header__link--mail {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
   }
 }
 

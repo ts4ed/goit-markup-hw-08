@@ -9,7 +9,6 @@
   }
 
   @include mq(desktop) {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
@@ -34,6 +33,9 @@
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
+  }
+  @include mq(desktop){
+    width: 1600px;
   }
 
   background-color: var(--third-bg-color);
