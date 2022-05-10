@@ -1,13 +1,13 @@
-@import "utils/button";
 @import "utils/mixins";
 @import "utils/normalise";
 @import "utils/placeholder";
-@import "utils/social-list";
 @import "utils/variables";
 @import "base/card-set";
 @import "base/common";
 @import "base/container";
 @import "base/section";
+@import "components/social-list";
+@import "components/button";
 @import "components/backdrop";
 @import "components/logo";
 @import "components/modal";
