@@ -1,4 +1,3 @@
-
 .about__list {
   @extend %list;
 }
@@ -11,7 +10,7 @@
   margin-bottom: 30px;
 
   background-color: var(--third-bg-color);
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     max-width: 480px;
   }
 }
@@ -20,13 +19,12 @@
   height: 70px;
 }
 .about__item {
-  @include mq(mobile-only) {
-    --card-item: 1;
-  }
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
     --card-item: 2;
   }
-  --card-item: 4;
+  @include mq(desktop) {
+    --card-item: 4;
+  }
 }
 .about__title {
   @include mq(mobile-only) {

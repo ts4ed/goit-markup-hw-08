@@ -1,9 +1,10 @@
 .social__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   @extend %list;
   @include mq(mobile-only){
-    justify-content: center;
+    
   }
 }
 .social__item:not(:last-child) {

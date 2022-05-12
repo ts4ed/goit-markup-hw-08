@@ -32,7 +32,8 @@
           </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
-          <nav class="nav">
+          <div class="menu-container__item">
+            <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="header__link" href="./index.html">Студия</a>
@@ -45,7 +46,9 @@
               </li>
             </ul>
           </nav>
-          <ul class="auth__list">
+          </div>
+          <div class="menu-container__item menu-container__item--auth">
+            <ul class="auth__list">
             <li class="auth__item">
               <a class="header__link header__link--mail" href="mailto:info@devstudio.com">
                 <svg class="icon__mail">
@@ -69,6 +72,7 @@
             <li class="menu-button__item">Facebook</li>
             <li class="menu-button__item">LinkedIn</li>
           </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -101,7 +105,7 @@
         </div>
 
         <!-- Catalog -->
-        <div class="container">
+        <div class="container catalog__container">
           <h2 class="visually--hidden">Варианты наших работ</h2>
           <ul class="catalog__list card__set">
             <li class="card__item">

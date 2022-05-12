@@ -1,11 +1,7 @@
-.nav__item:last-child {
-  @include mq(mobile-only) {
-    padding-bottom: 306px;
-  }
-}
+
 .nav__item:not(:last-child) {
-  @include mq(mobile-only) {
-    margin-bottom: 32px;
+  @include mq(mobile-only){
+    margin-bottom: 30px;
   }
   @include mq(tablet) {
     margin-right: 50px;
@@ -16,9 +12,6 @@
 }
 .nav__list {
   @extend %list;
-  @include mq(mobile-only) {
-    padding-top: 48px;
-  }
   @include mq(tablet) {
     display: flex;
     align-items: center;
@@ -33,13 +26,14 @@
     flex-direction: row-reverse;
     flex-direction: column-reverse;
   }
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     margin-left: 75px;
     justify-content: center;
     flex-direction: column;
   }
   @include mq(desktop){
-    margin-left: 305px;
+    margin-left: 285px;
+    align-items: center;
   }
 }
 .auth__item:not(:first-child) {
@@ -55,7 +49,6 @@
 }
 .auth__item:not(:last-child) {
   @include mq(mobile-only) {
-    margin-bottom: 64px;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;

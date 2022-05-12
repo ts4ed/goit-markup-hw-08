@@ -1,61 +1,58 @@
 .footer {
-    & > .social__icon {
-      fill: var(--third-color-text);
-    }
-  
+  padding-top: 60px;
+    padding-bottom: 60px;
+  & > .social__icon {
+    fill: var(--third-color-text);
+  }
+
   @include mq(mobile-only) {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
     max-width: 768px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
   }
-   @include mq(desktop){
-     width: 1600px;
-     margin-left: auto;
-    margin-right: auto;
-   }
-}
-.footer__section {
-  @include mq(mobile-only) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @include mq(tablet-only){
-    padding-top: 60px;
-  padding-bottom: 60px;
+  @include mq(desktop) {
+    
   }
   background-color: var(--secondary-bg-color);
 }
-.footer .container {
+.footer__container {
   @include mq(mobile-only) {
     display: block;
     justify-content: center;
     align-items: center;
     height: 500px;
   }
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
     display: flex;
     flex-wrap: wrap;
   }
   @include mq(desktop) {
     display: flex;
     align-items: baseline;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-.footer__item{
+.footer__item {
   @include mq(mobile-only) {
     margin-bottom: 60px;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
+    text-align: center;
     margin-left: auto;
-    &:last-child{
+    &:last-child {
       margin-right: auto;
     }
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 60px;
     }
   }
@@ -66,7 +63,7 @@
   }
 }
 .footer__item:last-child {
-  @include mq(desktop){
+  @include mq(desktop) {
     margin-left: auto;
   }
 }
@@ -76,7 +73,7 @@
     justify-content: center;
     text-align: center;
   }
-  @include mq(desktop){
+  @include mq(desktop) {
     margin-right: 70px;
   }
   font-style: inherit;
@@ -129,11 +126,10 @@
 
 /* submit */
 .subscribe {
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
     display: block;
     text-align: center;
     width: 450px;
-
   }
   @include mq(desktop) {
     display: flex;
@@ -146,7 +142,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -162,13 +158,13 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  @include mq(tablet-only){
+  @include mq(tablet-only) {
     width: 100%;
     margin-bottom: 20px;
   }
   padding-left: 16px;
   margin-right: 12px;
-  @include mq(desktop){
+  @include mq(desktop) {
     width: 358px;
   }
   height: 50px;

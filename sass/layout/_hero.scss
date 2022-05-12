@@ -2,21 +2,21 @@
   margin-left: auto;
   margin-right: auto;
   @include mq(mobile-only) {
-    height: 400px;
+    
     max-width: 480px;
   }
   @include mq(tablet-only) {
-    height: 400px;
+    
     max-width: 768px;
   }
   @include mq(desktop) {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    max-width: 1600px;
   }
   display: flex;
   align-items: center;
 
-  max-width: 1600px;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   background-color: var(--secondary-bg-color);
   @include mq(mobile-only) {
@@ -60,7 +60,7 @@
     color: #ffffff;
   }
   text-align: center;
-  width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;

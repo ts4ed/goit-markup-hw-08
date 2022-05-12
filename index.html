@@ -32,7 +32,8 @@
           </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
-          <nav class="nav">
+          <div class="menu-container__item">
+            <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="header__link current" href="./index.html">Студия</a>
@@ -45,7 +46,9 @@
               </li>
             </ul>
           </nav>
-          <ul class="auth__list">
+          </div>
+          <div class="menu-container__item menu-container__item--auth">
+            <ul class="auth__list">
             <li class="auth__item">
               <a class="header__link header__link--mail" href="mailto:info@devstudio.com">
                 <svg class="icon__mail">
@@ -69,6 +72,7 @@
             <li class="menu-button__item">Facebook</li>
             <li class="menu-button__item">LinkedIn</li>
           </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -582,109 +586,107 @@
     <!-- Footer -->
 
     <footer class="footer">
-      <div class="section footer__section">
-        <div class="container">
-          <div class="footer__item">
-            <a class="footer__link logo__footer" href="./index.html"
-              >Web<span class="logo__white">Studio</span></a
-            >
-            <address class="address">
-              <ul class="address__list">
-                <li class="address__item">
-                  <a
-                    class="footer__link--info"
-                    href="https://goo.gl/maps/AMvUKNJv9h5WxEZ98"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a class="footer__link--info" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="address__item">
-                  <a class="footer__link--info" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="footer__item social">
-            <h2 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-            <ul class="social__list">
-              <li class="social__item">
+      <div class="container footer__container">
+        <div class="footer__item">
+          <a class="footer__link logo__footer" href="./index.html"
+            >Web<span class="logo__white">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
                 <a
-                  class="social__link"
-                  href="https://www.instagram.com/"
+                  class="footer__link--info"
+                  href="https://goo.gl/maps/AMvUKNJv9h5WxEZ98"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  aria-label="ссылка на инстаграм"
+                  >г. Киев, пр-т Леси Украинки, 26</a
                 >
-                  <svg class="social__icon social__icon--white">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
               </li>
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  aria-label="ссылка на твиттер"
-                >
-                  <svg class="social__icon social__icon--white">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+              <li class="address__item">
+                <a class="footer__link--info" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  aria-label="ссылка на фейсбук"
-                >
-                  <svg class="social__icon social__icon--white">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link"
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  aria-label="ссылка на линкедин"
-                >
-                  <svg class="social__icon social__icon--white">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+              <li class="address__item">
+                <a class="footer__link--info" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
-          </div>
-          <div class="footer__item subscribe">
-            <form class="submit js-speaker-form">
-              <label class="submit__label" for="mail">подпишитесь на рассылку</label>
-              <div class="subscribe">
-                <input
-                  class="submit__input"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                  placeholder="E-mail"
-                />
-                <button class="button" type="submit">
-                  Подписаться
-                  <svg class="submit__icon">
-                    <use href="./images/icons.svg#icon-subscribe"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+          </address>
+        </div>
+        <div class="footer__item social">
+          <h2 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="ссылка на инстаграм"
+              >
+                <svg class="social__icon social__icon--white">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="ссылка на твиттер"
+              >
+                <svg class="social__icon social__icon--white">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="ссылка на фейсбук"
+              >
+                <svg class="social__icon social__icon--white">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="ссылка на линкедин"
+              >
+                <svg class="social__icon social__icon--white">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item subscribe">
+          <form class="submit js-speaker-form">
+            <label class="submit__label" for="mail">подпишитесь на рассылку</label>
+            <div class="subscribe">
+              <input
+                class="submit__input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <button class="button" type="submit">
+                Подписаться
+                <svg class="submit__icon">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -749,12 +751,15 @@
                   name="confirm"
                   id="confirmation"
                 />
-                <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и принимаю<a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="confirmation__link"
-                  >Условия договора</a
+                <span class="checkbox__icon"></span>
+                <span class="modal__span"
+                  >Соглашаюсь с рассылкой и <span>принимаю</span><a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="confirmation__link"
+                    >Условия договора</a
+                  ></span
                 >
               </label>
             </div>
