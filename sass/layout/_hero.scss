@@ -9,8 +9,8 @@
     
     max-width: 768px;
   }
-  @include mq(desktop) {
-    max-width: 1600px;
+  @include mq(desktop){
+    max-width: 100vw;
   }
   display: flex;
   align-items: center;

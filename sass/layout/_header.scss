@@ -12,7 +12,8 @@
     margin-right: auto;
   }
   @include mq(desktop) {
-    max-width: 1600px;
+    max-width: 100vw;
+  
     margin-left: auto;
     margin-right: auto;
   }

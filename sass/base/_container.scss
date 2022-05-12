@@ -7,7 +7,9 @@
   @include mq(tablet-only) {
     max-width: 768px;
   }
-  
+  @include mq(desktop){
+    max-width: 1600px;
+  }
 }
 .hero__container{
   @include mq(mobile){
@@ -23,5 +25,10 @@
 .filter__container{
    @include mq(mobile-only) {
     max-width: 480px;
+  }
+}
+.team__container{
+  @include mq(desktop){
+    max-width: 1200px;
   }
 }
