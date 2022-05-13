@@ -1,20 +1,6 @@
 .about__list {
   @extend %list;
 }
-.about__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 120px;
-  margin-bottom: 30px;
-
-  background-color: var(--third-bg-color);
-}
-.about__icon {
-  width: 70px;
-  height: 70px;
-}
 .about__item {
   @include mq(tablet-only) {
     --card-item: 2;
@@ -22,10 +8,23 @@
   @include mq(desktop) {
     --card-item: 4;
   }
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
 
+    background-color: var(--third-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+  }
   @for $i from 1 through 4 {
-    .about__icon:nth-child(#{$i}) {
-      background-image: url(../images/about/about#{$i}.svg);
+    &:nth-child(4n + #{$i}) {
+      &::before {
+        background-image: url(../images/about/about#{$i}.svg);
+      }
     }
   }
 }
