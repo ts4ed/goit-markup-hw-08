@@ -2,9 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   @extend %list;
-  @include mq(mobile-only){
-    padding-bottom: 60px;
-  }
   @include mq(tablet-only){
     & > .card__item{
       --card-item: 2;

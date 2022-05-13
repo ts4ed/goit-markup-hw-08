@@ -11,18 +11,9 @@
     max-width: 1600px;
   }
 }
-.hero__container{
-  @include mq(mobile){
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-  @include mq(desktop){
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
+
 .catalog__container,
-.filter__container{
+.clients__container{
    @include mq(mobile-only) {
     max-width: 480px;
   }

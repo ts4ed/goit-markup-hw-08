@@ -1,6 +1,5 @@
-
 .nav__item:not(:last-child) {
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     margin-bottom: 30px;
   }
   @include mq(tablet) {
@@ -21,17 +20,17 @@
   @extend %list;
   display: flex;
   @include mq(mobile-only) {
-    
+    margin-bottom: 32px;
 
     flex-direction: row-reverse;
     flex-direction: column-reverse;
   }
   @include mq(tablet) {
-    margin-left: 75px;
+    
     justify-content: center;
     flex-direction: column;
   }
-  @include mq(desktop){
+  @include mq(desktop) {
     margin-left: 285px;
     align-items: center;
   }

@@ -7,13 +7,14 @@
   
 }
 .clients__item {
-  @include mq(mobile-only){
-    --card-item: 2;
-  }
+  --card-item: 2;
   @include mq(tablet-only){
     --card-item: 3;
   }
-  --card-item: 6;
+  @include mq(desktop){
+    --card-item: 6;
+  }
+  
 }
 .clients__link {
   display: flex;
