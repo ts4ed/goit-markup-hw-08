@@ -1008,12 +1008,6 @@ img {
   background-color: var(--third-bg-color);
 }
 
-@media (max-width: 767.98px) {
-  .about__icons {
-    max-width: 480px;
-  }
-}
-
 .about__icon {
   width: 70px;
   height: 70px;
@@ -1029,6 +1023,22 @@ img {
   .about__item {
     --card-item: 4;
   }
+}
+
+.about__item .about__icon:nth-child(1) {
+  background-image: url(../images/about/about1.svg);
+}
+
+.about__item .about__icon:nth-child(2) {
+  background-image: url(../images/about/about2.svg);
+}
+
+.about__item .about__icon:nth-child(3) {
+  background-image: url(../images/about/about3.svg);
+}
+
+.about__item .about__icon:nth-child(4) {
+  background-image: url(../images/about/about4.svg);
 }
 
 .about__title {

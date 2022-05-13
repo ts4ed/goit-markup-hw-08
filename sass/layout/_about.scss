@@ -10,17 +10,12 @@
   margin-bottom: 30px;
 
   background-color: var(--third-bg-color);
-  @include mq(mobile-only) {
-    max-width: 480px;
-  }
-
 }
 .about__icon {
   width: 70px;
   height: 70px;
 }
 .about__item {
-  
   @include mq(tablet-only) {
     --card-item: 2;
   }
@@ -28,8 +23,11 @@
     --card-item: 4;
   }
 
-
-  
+  @for $i from 1 through 4 {
+    .about__icon:nth-child(#{$i}) {
+      background-image: url(../images/about/about#{$i}.svg);
+    }
+  }
 }
 .about__title {
   @include mq(mobile-only) {
