@@ -613,6 +613,12 @@ img {
   color: var(--accent-text-color);
 }
 
+@media (max-width: 767.98px) {
+  .logo__header {
+    padding: 16px 0px;
+  }
+}
+
 @media (min-width: 768px) {
   .logo__header {
     margin-right: 84px;
@@ -913,6 +919,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    row-gap: 10px;
   }
 }
 
@@ -1161,11 +1168,6 @@ img {
   }
   .footer__item:not(:last-child) {
     margin-bottom: 60px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1199.98px) {
-  .footer__item:not(:last-child) {
     margin-right: 70px;
   }
 }
@@ -1429,7 +1431,6 @@ img {
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .header__link--mail {
     padding: 0px;
-    padding-bottom: 10px;
     font-size: 12px;
     line-height: 1.17;
   }

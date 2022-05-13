@@ -26,6 +26,9 @@
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
   @extend %link;
+  @include mq(mobile-only){
+    padding: 16px 0px;
+  }
   @include mq(tablet){
     margin-right: 84px;
   }

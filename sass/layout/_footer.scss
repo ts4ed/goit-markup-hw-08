@@ -1,12 +1,10 @@
 .footer {
   padding-top: 60px;
-    padding-bottom: 60px;
+  padding-bottom: 60px;
   & > .social__icon {
     fill: var(--third-color-text);
   }
 
-
-  
   background-color: var(--secondary-bg-color);
 }
 .footer__container {
@@ -44,19 +42,16 @@
     }
     &:not(:last-child) {
       margin-bottom: 60px;
+      margin-right: 70px;
+    }
+  }
+  &:last-child {
+    @include mq(desktop) {
+      margin-left: auto;
     }
   }
 }
-.footer__item:not(:last-child) {
-  @include mq(tablet-only) {
-    margin-right: 70px;
-  }
-}
-.footer__item:last-child {
-  @include mq(desktop) {
-    margin-left: auto;
-  }
-}
+
 .address {
   @include mq(mobile-only) {
     display: flex;
@@ -99,7 +94,6 @@
 }
 
 .social__title {
-  
   @include mq(mobile-only) {
     display: flex;
     justify-content: center;
